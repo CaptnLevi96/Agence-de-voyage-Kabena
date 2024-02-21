@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    
+}
+
+
+nav{
+    width: 100%;
+    height: 12vh;
+    background-color: #00000052;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    
+}
+
+nav .menu a:hover{
+    color: #00fc13;
+}
+
+nav .menu a:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 2px;
+    background-color: rgb(255, 11, 243);
+    transition: all 0.3s linear;
+
+}
+
+nav .menu a:hover:before{
+    width: 100%;
+}
+
+section p{
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #000;
+    margin-bottom: 50px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(../Images/destination.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}       
+
+nav .logo{
+    width: 25%;
+    text-align: center;
+    font-size: 18px;
+    text-shadow: 3px 4px 2px black;
+}
+
+nav .menu{
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .menu a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+section h3{
+    font-size: 33px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+main{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+section h1{
+    margin: 14px 0px 18px 0;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000;
+}
+
+section a{
+    padding: 9px 3Opx;
+    border-radius: 4px;
+    outline: none;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 12px;
+    margin-top: 30px;
+}
+
+section .btn1{
+    background-color: #fff;
+    color: #000;
+    
+}
+
+section .btn1:hover{
+    background-color: #000000;
+    color: #ffffff;
+    transition: all 0.2s linear;
+}
+
+section .btn2{
+    background-color: #0e63e2;
+    color: #000;
+}
+
+section .btn2:hover{
+    background-color: #ff0000;
+    color: #ffffff;
+    transition: all 0.2s linear;
+}
+
+nav .menu a:first-child{
+    color: #00fc13;
+}
+
+.nameslideshow:after{
+    color: #00fc13;
+    animation: changename 7s infinite linear;
+    content: '';
+}  
+
+@keyframes changename{
+    0% {content: "La beauté";}
+    25% {content: "L'histoire";}
+    50% {content: "La politique";}
+    75% {content: "Les évenements";}
+    100% {content: "Le Rwanda";}
+}
